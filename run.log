@@ -1,0 +1,106 @@
+2026-06-08 20:07:16,369 - INFO - Job started
+2026-06-08 20:07:16,370 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 102, in main
+    config = load_config(args.config)
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 41, in load_config
+    if key not in config:
+TypeError: argument of type 'NoneType' is not iterable
+2026-06-08 20:09:37,139 - INFO - Job started
+2026-06-08 20:09:37,167 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-08 20:09:37,192 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 116, in main
+    df = load_data(args.input)
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 58, in load_data
+    raise ValueError("Column 'close' not found")
+ValueError: Column 'close' not found
+2026-06-08 20:13:46,020 - INFO - Job started
+2026-06-08 20:13:46,020 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-08 20:13:46,041 - INFO - Columns found: ['timestamp,open,high,low,close,volume_btc,volume_usd']
+2026-06-08 20:13:46,041 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 136, in main
+    df = load_data(args.input)
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 75, in load_data
+    raise ValueError("Column 'close' not found")
+ValueError: Column 'close' not found
+2026-06-08 20:19:37,335 - INFO - Job started
+2026-06-08 20:19:37,337 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-08 20:19:37,353 - INFO - Columns found: ['timestamp,open,high,low,close,volume_btc,volume_usd']
+2026-06-08 20:19:37,353 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 136, in main
+    df = load_data(args.input)
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 75, in load_data
+    raise ValueError("Column 'close' not found")
+ValueError: Column 'close' not found
+2026-06-08 20:21:30,447 - INFO - Job started
+2026-06-08 20:21:30,449 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-08 20:21:30,473 - INFO - Columns found: ['timestamp', 'open', 'high', 'low', 'close', 'volume_btc', 'volume_usd']
+2026-06-08 20:21:30,474 - INFO - Rows loaded: 10000
+2026-06-08 20:21:30,474 - INFO - Calculating rolling mean
+2026-06-08 20:21:30,476 - INFO - Generating signals
+2026-06-08 20:21:30,478 - INFO - Signal rate: 0.4989
+2026-06-08 20:21:30,479 - INFO - Metrics: {'version': 'v1', 'rows_processed': 10000, 'metric': 'signal_rate', 'value': 0.4989, 'latency_ms': 31, 'seed': 42, 'status': 'success'}
+2026-06-08 20:21:30,479 - INFO - Job completed successfully
+2026-06-08 20:23:59,101 - INFO - Job started
+2026-06-08 20:23:59,102 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-08 20:23:59,102 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 143, in main
+    df = load_data(args.input)
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 59, in load_data
+    raise FileNotFoundError("Input CSV file not found")
+FileNotFoundError: Input CSV file not found
+2026-06-08 20:24:22,087 - INFO - Job started
+2026-06-08 20:24:22,088 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 129, in main
+    config = load_config(args.config)
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 38, in load_config
+    raise FileNotFoundError("Config file not found")
+FileNotFoundError: Config file not found
+2026-06-08 20:25:12,007 - INFO - Job started
+2026-06-08 20:25:12,008 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 129, in main
+    config = load_config(args.config)
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 44, in load_config
+    raise ValueError("Config file is empty")
+ValueError: Config file is empty
+2026-06-08 20:25:51,089 - INFO - Job started
+2026-06-08 20:25:51,110 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 129, in main
+    config = load_config(args.config)
+  File "C:\Users\bilan\OneDrive\Code\Tasks\ML_Primetrade.ai\run.py", line 50, in load_config
+    raise ValueError(f"Missing config field: {key}")
+ValueError: Missing config field: version
+2026-06-08 20:26:17,337 - INFO - Job started
+2026-06-08 20:26:17,340 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-08 20:26:17,360 - INFO - Columns found: ['timestamp', 'open', 'high', 'low', 'close', 'volume_btc', 'volume_usd']
+2026-06-08 20:26:17,361 - INFO - Rows loaded: 10000
+2026-06-08 20:26:17,361 - INFO - Calculating rolling mean
+2026-06-08 20:26:17,363 - INFO - Generating signals
+2026-06-08 20:26:17,365 - INFO - Signal rate: 0.4989
+2026-06-08 20:26:17,365 - INFO - Metrics: {'version': 'v1', 'rows_processed': 10000, 'metric': 'signal_rate', 'value': 0.4989, 'latency_ms': 27, 'seed': 42, 'status': 'success'}
+2026-06-08 20:26:17,365 - INFO - Job completed successfully
+2026-06-08 20:26:23,488 - INFO - Job started
+2026-06-08 20:26:23,489 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-08 20:26:23,511 - INFO - Columns found: ['timestamp', 'open', 'high', 'low', 'close', 'volume_btc', 'volume_usd']
+2026-06-08 20:26:23,512 - INFO - Rows loaded: 10000
+2026-06-08 20:26:23,513 - INFO - Calculating rolling mean
+2026-06-08 20:26:23,514 - INFO - Generating signals
+2026-06-08 20:26:23,516 - INFO - Signal rate: 0.4989
+2026-06-08 20:26:23,516 - INFO - Metrics: {'version': 'v1', 'rows_processed': 10000, 'metric': 'signal_rate', 'value': 0.4989, 'latency_ms': 27, 'seed': 42, 'status': 'success'}
+2026-06-08 20:26:23,516 - INFO - Job completed successfully
+2026-06-08 21:18:39,768 - INFO - Job started
+2026-06-08 21:18:39,769 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-08 21:18:39,794 - INFO - Columns found: ['timestamp', 'open', 'high', 'low', 'close', 'volume_btc', 'volume_usd']
+2026-06-08 21:18:39,796 - INFO - Rows loaded: 10000
+2026-06-08 21:18:39,796 - INFO - Calculating rolling mean
+2026-06-08 21:18:39,799 - INFO - Generating signals
+2026-06-08 21:18:39,803 - INFO - Signal rate: 0.4989
+2026-06-08 21:18:39,803 - INFO - Metrics: {'version': 'v1', 'rows_processed': 10000, 'metric': 'signal_rate', 'value': 0.4989, 'latency_ms': 33, 'seed': 42, 'status': 'success'}
+2026-06-08 21:18:39,803 - INFO - Job completed successfully
